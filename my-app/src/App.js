@@ -11,11 +11,9 @@ import Marks from './Marks';
 function App() {
   return(
   <div>
-    <Name/>
-    <Marks/>
-    <Skills/>
-    <Projects/>
-    <P_info/>
+    <Header/>
+    <Main/>
+    <Footer/>
   </div>
   )
 }
