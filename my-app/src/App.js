@@ -31,6 +31,7 @@ function App() {
     {/* <Main/> */}
     {/* <Registration/> */}
     {/* <Login/> */}
+    {/* <About/> */}
 
     <Footer/>
   </div>
