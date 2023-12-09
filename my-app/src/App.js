@@ -18,23 +18,25 @@ import MainPage from './MainPage';
 function App() {
   return(
   <div>
-    {/* <Header/>
-
+     
+     <Header/>
     <Routes>
       <Route path="/" element={<Home/>}/> 
       <Route path="/about" element={<About/>} />
       <Route path="/contact" element={<Contact/>} />
-      <Route path="/reg" element={<Registration/>} />
-      <Route path="/login" element={<Login/>} />
-
-    </Routes> */}
-    <MainPage/>
+      {/* <Route path="/reg" element={<Registration/>} />
+      <Route path="/login" element={<Login/>} /> */}
+    </Routes> */
+    {/* <MainPage/> */}
     {/* <Main/> */}
     {/* <Registration/> */}
     {/* <Login/> */}
     {/* <About/> */}
-
     {/* <Footer/> */}
+
+    
+    
+    <Footer/>
   </div>
   )
 }

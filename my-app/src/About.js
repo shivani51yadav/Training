@@ -2,7 +2,8 @@ import Accordion from 'react-bootstrap/Accordion';
 
 function About() {
   return (
-    <Accordion>
+    <>
+    {/* <Accordion>
       <Accordion.Item eventKey="0">
         <Accordion.Header>Accordion Item #1</Accordion.Header>
         <Accordion.Body>
@@ -27,7 +28,8 @@ function About() {
           culpa qui officia deserunt mollit anim id est laborum.
         </Accordion.Body>
       </Accordion.Item>
-    </Accordion>
+    </Accordion> */}
+    </>
   );
 }
 
