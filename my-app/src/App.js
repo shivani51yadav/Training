@@ -13,11 +13,12 @@ import Contact from './Contact';
 import Home from './Home';
 import Registration from './Registration';
 import Login from './Login';
+import MainPage from './MainPage';
 
 function App() {
   return(
   <div>
-    <Header/>
+    {/* <Header/>
 
     <Routes>
       <Route path="/" element={<Home/>}/> 
@@ -26,14 +27,14 @@ function App() {
       <Route path="/reg" element={<Registration/>} />
       <Route path="/login" element={<Login/>} />
 
-    </Routes>
-
+    </Routes> */}
+    <MainPage/>
     {/* <Main/> */}
     {/* <Registration/> */}
     {/* <Login/> */}
     {/* <About/> */}
 
-    <Footer/>
+    {/* <Footer/> */}
   </div>
   )
 }
