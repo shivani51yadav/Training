@@ -17,9 +17,19 @@ function Header() {
             <Link to="/contact">Contact</Link>
              <Link to="/login">Login</Link>
              <Link to="/reg">Registration</Link> 
+             <Link to="/mainPage">MainPage</Link> 
 
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
+
+            <Nav.Link href="./">Home</Nav.Link>
+            <Nav.Link href="./reg">Registration</Nav.Link>
+            <Nav.Link href="./login">Login</Nav.Link>
+            <Nav.Link href="./contact">Contact</Nav.Link>
+            <Nav.Link href="./about">About</Nav.Link>
+            <Nav.Link href="./mainPage">MainPage</Nav.Link>
+            
+
+
+
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
