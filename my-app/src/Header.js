@@ -15,8 +15,8 @@ function Header() {
             <Link to="/">Home</Link>
             <Link to="/about">About</Link>
             <Link to="/contact">Contact</Link>
-             {/* <Link to="/login">Login</Link>
-             <Link to="/reg">Registration</Link>  */}
+             <Link to="/login">Login</Link>
+             <Link to="/reg">Registration</Link> 
 
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">Link</Nav.Link>
