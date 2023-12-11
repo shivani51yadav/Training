@@ -1,45 +1,35 @@
-import './App.css';
-import Header from './Header';
-import Footer from './Footer';
-import Main from './Main';
-import Name from './Name';
-import Skills from './Skills';
-import Projects from './Projects';
-import P_info from './P_info';
-import Marks from './Marks';
-import { Routes,Route } from 'react-router-dom';
-import About from './About';
-import Contact from './Contact';
-import Home from './Home';
-import Registration from './Registration';
-import Login from './Login';
-import MainPage from './MainPage';
+import "./App.css";
+import Header from "./Header";
+import Footer from "./Footer";
+import Main from "./Main";
+import Name from "./Name";
+import Skills from "./Skills";
+import Projects from "./Projects";
+import P_info from "./P_info";
+import Marks from "./Marks";
+import { Routes, Route } from "react-router-dom";
+import About from "./About";
+import Contact from "./Contact";
+import Home from "./Home";
+import Registration from "./Registration";
+import Login from "./Login";
+import MainPage from "./MainPage";
 
 function App() {
-  return(
-  <div>
-     
-     <Header/>
-    <Routes>
-      <Route path="/" element={<Home/>}/> 
-      <Route path="/about" element={<About/>} />
-      <Route path="/contact" element={<Contact/>} />
-      <Route path="/reg" element={<Registration/>} />
-      <Route path="/mainPage" element={<MainPage/>} />
+  return (
+    <div>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/reg" element={<Registration />} />
+        <Route path="/mainPage" element={<MainPage />} />
+      </Routes>
 
-    </Routes> 
-    {/* <MainPage/> */}
-    {/* <Main/> */}
-    {/* <Registration/> */}
-    {/* <Login/> */}
-    {/* <About/> */}
-    {/* <Footer/> */}
-
-    
-    
-    <Footer/>
-  </div>
-  )
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
