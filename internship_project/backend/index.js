@@ -3,10 +3,11 @@ import cors from 'cors';
 import morgan from "morgan";
 import colors from 'colors';
 import dotenv from 'dotenv';
-
 import connectDB from './config/connectDB.js';
 
 
+
+//env config
 dotenv.config();
 
 
@@ -41,21 +42,9 @@ app.get('/test',(req,res)=>{
 
 
 //port
-const PORT=process.env.PORT || 8000
+const PORT=process.env.PORT || 7000
 
 //listen
-app.listen(8080,()=>{
-    console.log(`Server Running`, bgCyan.white)
+app.listen(PORT,()=>{
+    console.log(`Server Running on ${process.env.DEV_MODE} mode port no ${PORT}`.bgCyan.white)
 })
-
-
-
-
-
-
-
-console.log('hello')
-
-let a=10, b=20,c;
-c=a+b
-console.log(c)
