@@ -4,6 +4,8 @@ import morgan from "morgan";
 import colors from 'colors';
 import dotenv from 'dotenv';
 import connectDB from './config/connectDB.js';
+import UserRoute from './routes/UserRoutes.js';
+import FacRoute from './routes/FacRoutes.js';
 
 
 
@@ -40,6 +42,8 @@ app.get('/test',(req,res)=>{
 });
 
 
+app.use('/api/v1/user',UserRoute);
+app.use('/api/v1/fac',FacRoute);
 
 //port
 const PORT=process.env.PORT || 7000
