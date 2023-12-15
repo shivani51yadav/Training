@@ -80,7 +80,7 @@ const UserDisplay = async (req, res) => {
 const UserSearch=async(req,res)=>{
     try{
         console.log(req.params)
-        const user=await UserModel.findOne({_id:req.id});
+        const user=await UserModel.findOne({_id:req.params.id});
         console.log(user)
         
             res.status(200).send({
@@ -92,11 +92,64 @@ const UserSearch=async(req,res)=>{
         } catch(err){
             console.log(err);
             return res.status(500).send({
-                
+                status:false,
+                message:"Error in Display all Users",
+                err
+
             })
         }
     }
-}
+
+
+// delete User
+// const UserDelete=async(req,res)=>{
+//     try{
+//         console.log(req.params)
+//         const user=await UserModel.findByIdAndDelete({_id:req.params.id});
+//         console.log(user)
+        
+//             res.status(200).send({
+//                 status:true,
+//                 count:user.length,
+//                 message:"User Deleted",
+//                 user,
+//             })
+//         } catch(err){
+//             console.log(err);
+//             return res.status(500).send({
+//                 status:false,
+//                 message:"Error in deleting Users",
+//                 err
+
+//             })
+//         }
+//     }
+
+
+
+// User Update
+// const UserUpdate=async(req,res)=>{
+//     try{
+//         console.log(req.params)
+//         const user=await UserModel.findByIdAndDelete({_id:req.params.id});
+//         console.log(user)
+        
+//             res.status(200).send({
+//                 status:true,
+//                 count:user.length,
+//                 message:"User Deleted",
+//                 user,
+//             })
+//         } catch(err){
+//             console.log(err);
+//             return res.status(500).send({
+//                 status:false,
+//                 message:"Error in deleting Users",
+//                 err
+
+//             })
+//         }
+//     }
 
 
 
@@ -146,4 +199,5 @@ export default {
   UserRegister,
   UserDisplay,
   UserLogin,
+  UserSearch,
 };
